@@ -1,0 +1,20 @@
+*::before,*::after, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    --primary-color:  rgba(240, 68, 56,.90);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
