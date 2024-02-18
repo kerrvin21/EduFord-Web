@@ -53,6 +53,7 @@
     justify-content: center;
     text-align: center;
     color: white;
+    border: 1px solid;
 }
 
 .section-header header {
@@ -61,6 +62,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 18px 35px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .section-header header img {
@@ -179,7 +183,9 @@ section .container .title {
     margin-bottom: 30px;
 }
 
-.container .title h1 , section h1, section span{
+.container .title h1,
+section h1,
+section span {
     text-transform: lowercase;
     text-transform: capitalize;
 }
@@ -249,10 +255,6 @@ section .container .title {
 
 /*FACILITIES*/
 
-section.facilities {}
-
-section.facilities .card {}
-
 section.facilities .card img {
     width: 100%;
     border-radius: 20px;
@@ -319,7 +321,8 @@ section.invitation {
     background-repeat: no-repeat;
     background-position: center;
 }
-section.invitation div{
+
+section.invitation div {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -330,13 +333,13 @@ section.invitation div{
     padding: 50px 0;
 }
 
-section.invitation h1{
+section.invitation h1 {
     padding: 20px 100px;
 }
 
 /*ABOUT US*/
-section.aboutus{
-    background-image:linear-gradient(180deg, white, rgba(0,0,0,.6));
+section.aboutus {
+    background-image: linear-gradient(180deg, white, rgba(0, 0, 0, .6));
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -345,30 +348,69 @@ section.aboutus{
     text-align: center;
 }
 
-section.aboutus h1{
+section.aboutus h1 {
     padding: 50px 0 20px 0;
 }
-section.aboutus > span{
-    flex:1;
+
+section.aboutus>span {
+    flex: 1;
     color: gray;
     max-width: 1080px;
 }
-section.aboutus div{
+
+section.aboutus div {
     flex-basis: 50px;
 }
 
-section.aboutus div i, .aboutus div p span{
+section.aboutus div i,
+.aboutus div p span {
     color: var(--primary-color);
     font-weight: bold;
     font-style: italic;
 }
 
-.aboutus div p{
+.aboutus div p {
     color: black;
 }
 
 
-/*=== TABLET VIEW ===*/
+/*=== TABLET VIEW 768px ===*/
+
+@media only screen and (min-width:768px) {
+
+    .section-header #menu,
+    #close-menu {
+        display: none;
+    }
+
+    .section-header nav {
+        display: block;
+        position: unset;
+        transform: unset;
+        padding: 0;
+        width: unset;
+        background-color: unset;
+    }
+
+    .section-header nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    .section-header nav ul li a {
+        padding: 5px 10px;
+    }
+
+    .section-header nav ul li a:hover {
+        color: white;
+        border-bottom: 1px solid var(--primary-color);
+    }
+
+}
+
 /*COURSES*/
 /*CAMPUS*/
 /*FACILITIES*/
